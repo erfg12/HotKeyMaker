@@ -46,5 +46,17 @@ namespace WindowsFormsApplication1.Properties {
                 this["saved_key"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("NONE")]
+        public string saved_holdkey {
+            get {
+                return ((string)(this["saved_holdkey"]));
+            }
+            set {
+                this["saved_holdkey"] = value;
+            }
+        }
     }
 }

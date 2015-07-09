@@ -8,5 +8,8 @@
     <Setting Name="saved_key" Type="System.String" Scope="User">
       <Value Profile="(Default)">TAB</Value>
     </Setting>
+    <Setting Name="saved_holdkey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NONE</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
