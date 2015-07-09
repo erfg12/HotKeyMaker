@@ -1,5 +1,5 @@
-Created as a favor. This program just hooks a key, and executes a program when pressed.
+Created as a favor. This program registers a hot key, and executes a file when pressed.
 
-Just a good example of how Windows key hooking works. Created with Visual Studios 2013.
+An example of how Windows RegisterHotKey works. Created in C# with Visual Studios 2013.
 
-Starts hidden and in system tray and when minimized hides to system tray.
+Starts hidden in system tray.

@@ -229,5 +229,10 @@ namespace WindowsFormsApplication1
         {
             MessageBox.Show("Created by The New Age Soldier ( VISIT: http://newagesoldier.com ) Created for my brother Kyle.","About HotKeyMaker", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://newagesoldier.com");
+        }
     }
 }
