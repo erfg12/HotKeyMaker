@@ -34,6 +34,17 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                hotkey.Text = Properties.Settings.Default.saved_key;
+                filepath.Text = Properties.Settings.Default.saved_file;
+                holdkey.Text = Properties.Settings.Default.saved_holdkey;
+                RegisterHotKey(this.Handle, 1, holdKey(holdkey.Text), textToVKey(hotkey.Text)); // can do more if you want, or a modifier
+            }
+            catch
+            {
+                MessageBox.Show("ERROR: Loading settings had an issue.");
+            }
         }
 
         Dictionary<string, uint> dictionary = new Dictionary<string, uint>();
@@ -139,10 +150,6 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
             loadDictionary();
-            hotkey.Text = Properties.Settings.Default.saved_key;
-            filepath.Text = Properties.Settings.Default.saved_file;
-            holdkey.Text = Properties.Settings.Default.saved_holdkey;
-            RegisterHotKey(this.Handle, 1, holdKey(holdkey.Text), textToVKey(hotkey.Text)); // can do more if you want, or a modifier
         }
 
         private void execBatch()
